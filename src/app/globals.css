@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --bg-void: #06090e;
+  --bg-card: rgba(13, 19, 31, 0.75);
+  --border-hud: rgba(0, 240, 255, 0.25);
+  --cyan-glow: #00f0ff;
+  --amber-alert: #ffb700;
+  --red-lock: #ff2e55;
+  --text-muted: #8b9bb4;
+  --font-heading: 'Space Grotesk', 'Orbitron', sans-serif;
+  --font-hud: 'Orbitron', monospace;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--bg-void);
+  color: #e2e8f0;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  min-height: 100vh;
+  scroll-behavior: auto !important;
+  selection-background-color: rgba(0, 240, 255, 0.3);
+  selection-color: #ffffff;
+}
+
+/* Background HUD Grid & Texture Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.03) 0%, transparent 70%),
+    linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  background-position: center center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Scanline Effect overlay */
+.scanline-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.35;
+}
+
+.canvas-3d-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Glassmorphism HUD Panels */
+.hud-panel {
+  background: rgba(11, 16, 26, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 0 12px rgba(0, 240, 255, 0.05);
+  position: relative;
+}
+
+.hud-panel-red {
+  background: rgba(26, 11, 16, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 46, 85, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(255, 46, 85, 0.15), inset 0 0 12px rgba(255, 46, 85, 0.05);
+}
+
+.hud-panel-amber {
+  background: rgba(26, 21, 11, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 183, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(255, 183, 0, 0.15), inset 0 0 12px rgba(255, 183, 0, 0.05);
+}
+
+/* HUD Corner Brackets */
+.hud-corner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: var(--cyan-glow);
+  pointer-events: none;
+}
+.hud-corner-tl { top: -1px; left: -1px; border-top: 2px solid; border-left: 2px solid; }
+.hud-corner-tr { top: -1px; right: -1px; border-top: 2px solid; border-right: 2px solid; }
+.hud-corner-bl { bottom: -1px; left: -1px; border-bottom: 2px solid; border-left: 2px solid; }
+.hud-corner-br { bottom: -1px; right: -1px; border-bottom: 2px solid; border-right: 2px solid; }
+
+/* Text Utilities */
+.font-heading { font-family: var(--font-heading); }
+.font-hud { font-family: var(--font-hud); }
+.font-mono { font-family: var(--font-mono); }
+
+.glow-cyan {
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.7), 0 0 24px rgba(0, 240, 255, 0.3);
+}
+
+.glow-amber {
+  text-shadow: 0 0 12px rgba(255, 183, 0, 0.7), 0 0 24px rgba(255, 183, 0, 0.3);
+}
+
+.glow-red {
+  text-shadow: 0 0 12px rgba(255, 46, 85, 0.7), 0 0 24px rgba(255, 46, 85, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #06090e;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 240, 255, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan-glow);
+}
+
+/* Radar Sweep Pulse Animation */
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar {
+  animation: radar-sweep 4s linear infinite;
+}
+
+@keyframes lock-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.95); }
+}
+
+.animate-lock {
+  animation: lock-pulse 1.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
