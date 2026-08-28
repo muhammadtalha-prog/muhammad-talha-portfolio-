@@ -269,7 +269,7 @@ export default function ContactV2() {
                     whileHover={{ scale: 1.15, y: -4, rotate: -4 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ type: "spring", stiffness: 350, damping: 15 }}
-                    href="https://www.linkedin.com/in/muhammadtalha-prog"
+                    href="https://www.linkedin.com/in/muhammad-talha-ai-researcher"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2.5 group/linkedin text-slate-950 hover:text-[#0a66c2] transition-colors"
