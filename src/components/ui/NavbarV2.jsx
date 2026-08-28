@@ -202,7 +202,7 @@ export default function NavbarV2() {
             <motion.a
               whileHover={{ scale: 1.15, y: -2, rotate: -4 }}
               whileTap={{ scale: 0.9 }}
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/muhammadtalha-prog"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-xl bg-slate-900/90 hover:bg-[#0070f3]/20 text-slate-300 hover:text-[#00e5ff] border border-white/10 hover:border-[#00e5ff] transition-all flex items-center justify-center shrink-0 shadow-md"

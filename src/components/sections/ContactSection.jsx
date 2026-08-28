@@ -79,10 +79,10 @@ export default function ContactSection() {
 
           {/* Social Links */}
           <div className="flex items-center gap-3 pt-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded bg-[#0c121e] border border-white/10 hover:border-[#00f0ff] text-slate-300 hover:text-[#00f0ff] transition-colors" title="GitHub">
+            <a href="https://github.com/muhammadtalha-prog" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded bg-[#0c121e] border border-white/10 hover:border-[#00f0ff] text-slate-300 hover:text-[#00f0ff] transition-colors" title="GitHub">
               <Globe className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded bg-[#0c121e] border border-white/10 hover:border-[#00f0ff] text-slate-300 hover:text-[#00f0ff] transition-colors" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/muhammadtalha-prog" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded bg-[#0c121e] border border-white/10 hover:border-[#00f0ff] text-slate-300 hover:text-[#00f0ff] transition-colors" title="LinkedIn">
               <Share2 className="w-5 h-5" />
             </a>
             <a href="https://medium.com" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded bg-[#0c121e] border border-white/10 hover:border-[#00f0ff] text-slate-300 hover:text-[#00f0ff] transition-colors" title="Medium">
