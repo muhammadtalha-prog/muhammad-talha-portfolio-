@@ -2,19 +2,19 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata = {
-  title: "MUHAMMAD TALHA — AI Research & ML Engineer",
+  title: "MUHAMMAD TALHA — AI Agent Developer & Computer Vision Researcher",
   description:
-    "Cinematic 3D Defense-Tech Portfolio of Muhammad Talha — AI Research & ML Engineer specializing in military IRSTD, WaveYOLO, maritime surveillance, and autonomous multi-agent systems.",
+    "Portfolio of Muhammad Talha — AI Agent Developer & Computer Vision Researcher specializing in YOLO-based maritime ship detection, military IRSTD, and SWaP-constrained edge AI systems.",
   keywords: [
     "Muhammad Talha",
-    "AI Research Engineer",
-    "ML Engineer",
+    "AI Agent Developer",
+    "Computer Vision Researcher",
     "YOLO11",
     "IRSTD",
-    "WaveYOLO",
     "Maritime Surveillance",
     "NASTP",
     "Air University IAA",
+    "Superior University",
   ],
   authors: [{ name: "Muhammad Talha", email: "su72-bscsm-f22-068@superior.edu.pk" }],
 };

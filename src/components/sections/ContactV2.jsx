@@ -251,7 +251,7 @@ export default function ContactV2() {
                     whileHover={{ scale: 1.15, y: -4, rotate: 4 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ type: "spring", stiffness: 350, damping: 15 }}
-                    href="https://github.com"
+                    href="https://github.com/muhammadtalha-prog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2.5 group/git text-slate-950 hover:text-sky-700 transition-colors"

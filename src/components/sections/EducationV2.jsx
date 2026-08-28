@@ -8,10 +8,10 @@ export default function EducationV2() {
     {
       id: "bscs",
       title: "BS(Hons.) in Computer Science (BSCS) | Superior University, Sargodha",
-      date: "Completed: 2026",
+      date: "Final Year (2026)",
       points: [
-        "8th semester completed",
-        "CGPA: 3.43/4.0",
+        "Final Year — 8th Semester Completed",
+        "CGPA: 3.43 / 4.0",
         "Grade: B+"
       ],
       sealText: "OFFICIAL BSCS DEGREE",

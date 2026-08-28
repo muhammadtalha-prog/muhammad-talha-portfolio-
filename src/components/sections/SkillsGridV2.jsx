@@ -14,17 +14,17 @@ export default function SkillsGridV2() {
       bgGradient: "from-blue-100/90 via-white to-indigo-100/90",
       borderColor: "border-blue-300",
       tagBorder: "border-blue-400/60 text-blue-950 bg-blue-50/90",
-      skills: ["Python", "C++", "Java"],
+      skills: ["Python", "C++", "Java", "SQL"],
     },
     {
       id: "data-analysis",
-      title: "Data Analysis",
+      title: "Data Analysis & ML",
       icon: Database,
       accentGradient: "from-emerald-600 to-teal-600",
       bgGradient: "from-emerald-100/90 via-white to-teal-100/90",
       borderColor: "border-emerald-300",
       tagBorder: "border-emerald-400/60 text-emerald-950 bg-emerald-50/90",
-      skills: ["Google Sheet", "Data Cleaning", "Exploratory Analysis"],
+      skills: ["YOLO11 / IRSTD", "Google Sheets", "Data Cleaning", "Exploratory Analysis"],
     },
     {
       id: "graphic-design",
@@ -34,7 +34,7 @@ export default function SkillsGridV2() {
       bgGradient: "from-purple-100/90 via-white to-pink-100/90",
       borderColor: "border-purple-300",
       tagBorder: "border-purple-400/60 text-purple-950 bg-purple-50/90",
-      skills: ["Logo designing", "posterdesigning", "video editing"],
+      skills: ["Logo Design", "Poster Design", "Brand Identity", "Video Editing"],
     },
     {
       id: "digital-marketing",
@@ -44,7 +44,7 @@ export default function SkillsGridV2() {
       bgGradient: "from-sky-100/90 via-white to-cyan-100/90",
       borderColor: "border-sky-300",
       tagBorder: "border-sky-400/60 text-sky-950 bg-sky-50/90",
-      skills: ["Facebook", "Instagram", "TikTok Marketing"],
+      skills: ["Facebook Ads", "Instagram Growth", "TikTok Marketing"],
     },
     {
       id: "dev-tools",
@@ -54,7 +54,7 @@ export default function SkillsGridV2() {
       bgGradient: "from-slate-100/90 via-white to-slate-200/90",
       borderColor: "border-slate-300",
       tagBorder: "border-slate-400/60 text-slate-950 bg-slate-50/90",
-      skills: ["Visual studio code", "Dev C++", "Google Colab", "Anti-Gravity"],
+      skills: ["VS Code", "Google Colab", "Antigravity IDE", "Dev-C++", "Git / GitHub"],
     },
     {
       id: "design-tools",
@@ -64,7 +64,7 @@ export default function SkillsGridV2() {
       bgGradient: "from-amber-100/90 via-white to-orange-100/90",
       borderColor: "border-amber-300",
       tagBorder: "border-amber-400/60 text-amber-950 bg-amber-50/90",
-      skills: ["Adobe illustrator", "Adobe Photoshop", "adobe premiere pro"],
+      skills: ["Adobe Illustrator", "Adobe Photoshop", "Adobe Premiere Pro", "Figma"],
     },
     {
       id: "marketing-tools",
@@ -74,7 +74,7 @@ export default function SkillsGridV2() {
       bgGradient: "from-red-100/90 via-white to-rose-100/90",
       borderColor: "border-red-300",
       tagBorder: "border-red-400/60 text-red-950 bg-red-50/90",
-      skills: ["Meta Business Suite", "TikTok creative"],
+      skills: ["Meta Business Suite", "TikTok Creative Center", "FB Ads Manager"],
     },
   ];
 
