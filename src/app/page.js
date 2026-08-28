@@ -1,46 +1,27 @@
-"use client";
-import dynamic from "next/dynamic";
-import HudNavbar from "@/components/ui/HudNavbar";
-import HeroSection from "@/components/sections/HeroSection";
-import IrstdResearchSection from "@/components/sections/IrstdResearchSection";
-import MaritimeResearchSection from "@/components/sections/MaritimeResearchSection";
-import MatlabResearchSection from "@/components/sections/MatlabResearchSection";
-import ElectricBikeSection from "@/components/sections/ElectricBikeSection";
-import ProjectsGallerySection from "@/components/sections/ProjectsGallerySection";
-import ExperienceSection from "@/components/sections/ExperienceSection";
-import SkillsSection from "@/components/sections/SkillsSection";
-import EducationSection from "@/components/sections/EducationSection";
-import CertificationsSection from "@/components/sections/CertificationsSection";
-import ContactSection from "@/components/sections/ContactSection";
-
-// Dynamically import WebGL 3D Master Canvas with SSR disabled
-const MasterCanvas3D = dynamic(() => import("@/components/canvas/MasterCanvas3D"), {
-  ssr: false,
-});
+import NavbarV2 from "@/components/ui/NavbarV2";
+import HeroV2 from "@/components/sections/HeroV2";
+import AffiliationsV2 from "@/components/sections/AffiliationsV2";
+import ProfessionalSummaryV2 from "@/components/sections/ProfessionalSummaryV2";
+import ResearchTechnicalProjects from "@/components/sections/ResearchTechnicalProjects";
+import InternshipExperience from "@/components/sections/InternshipExperience";
+import SkillsGridV2 from "@/components/sections/SkillsGridV2";
+import EducationV2 from "@/components/sections/EducationV2";
+import CertificationsV2 from "@/components/sections/CertificationsV2";
+import ContactV2 from "@/components/sections/ContactV2";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-[#06090e] text-slate-100 overflow-hidden">
-      {/* Fixed 3D WebGL Canvas Background */}
-      <MasterCanvas3D />
-
-      {/* Fixed Glass HUD Navbar */}
-      <HudNavbar />
-
-      {/* Continuous DOM Sections with Scroll-Synced Camera Trajectory */}
-      <div className="relative z-10">
-        <HeroSection />
-        <IrstdResearchSection />
-        <MaritimeResearchSection />
-        <MatlabResearchSection />
-        <ElectricBikeSection />
-        <ProjectsGallerySection />
-        <ExperienceSection />
-        <SkillsSection />
-        <EducationSection />
-        <CertificationsSection />
-        <ContactSection />
-      </div>
+    <main className="min-h-screen bg-[#f8fafc] text-slate-900 selection:bg-[#047857] selection:text-white">
+      <NavbarV2 />
+      <HeroV2 />
+      <AffiliationsV2 />
+      <ProfessionalSummaryV2 />
+      <ResearchTechnicalProjects />
+      <InternshipExperience />
+      <SkillsGridV2 />
+      <EducationV2 />
+      <CertificationsV2 />
+      <ContactV2 />
     </main>
   );
 }

@@ -1,0 +1,45 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 210 >>
+stream
+BT
+/F1 24 Tf
+50 720 Td
+(MUHAMMAD TALHA - CURRICULUM VITAE) Tj
+/F1 14 Tf
+0 -35 Td
+(AI Research & ML Engineer) Tj
+0 -25 Td
+(Email: su72-bscsm-f22-068@superior.edu.pk | Phone: +92 336 7508375) Tj
+0 -35 Td
+(BS Computer Science - Superior University Sargodha) Tj
+0 -25 Td
+(AI Agent Developer @ Air University IAA - NASTP) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000059 00000 n 
+0000000116 00000 n 
+0000000241 00000 n 
+0000000502 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+573
+%%EOF

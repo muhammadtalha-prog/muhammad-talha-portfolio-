@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="auBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="overlayGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.15)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.5)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Banner Background -->
+  <rect width="1200" height="450" fill="url(#auBgGrad)" rx="16"/>
+  <rect width="1200" height="450" fill="url(#overlayGrad)" rx="16"/>
+
+  <!-- Geometric Grid & Avionics Wings Motif -->
+  <g stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5" fill="none">
+    <circle cx="600" cy="225" r="300"/>
+    <circle cx="600" cy="225" r="200"/>
+    <circle cx="600" cy="225" r="100"/>
+    <line x1="0" y1="225" x2="1200" y2="225"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+  </g>
+
+  <!-- Stylized Air University Avionics Wings Silhouette -->
+  <g transform="translate(600, 160)" fill="none" stroke="#ffffff" stroke-width="4">
+    <!-- Center Crest Shield -->
+    <polygon points="0,-40 30,0 0,40 -30,0" fill="#047857" stroke="#38bdf8" stroke-width="3"/>
+    <!-- Left Wing -->
+    <path d="M-30,-10 C-120,-60 -250,-40 -350,20 C-240,10 -120,0 -30,10 Z" fill="#ffffff" fill-opacity="0.2"/>
+    <!-- Right Wing -->
+    <path d="M30,-10 C120,-60 250,-40 350,20 C240,10 120,0 30,10 Z" fill="#ffffff" fill-opacity="0.2"/>
+  </g>
+
+  <!-- University & IAA Emblem Text -->
+  <text x="600" y="270" font-family="'Space Grotesk', sans-serif" font-size="36" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">
+    AIR UNIVERSITY
+  </text>
+  <text x="600" y="315" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="2">
+    INSTITUTE OF AVIONICS AND AERONAUTICS (IAA)
+  </text>
+  <text x="600" y="355" font-family="monospace" font-size="14" font-weight="bold" fill="#34d399" text-anchor="middle" letter-spacing="3">
+    NASTP // ISLAMABAD, PAKISTAN
+  </text>
+
+  <!-- Decorative Top & Bottom Border Lines -->
+  <line x1="100" y1="40" x2="1100" y2="40" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.6"/>
+  <line x1="100" y1="410" x2="1100" y2="410" stroke="#34d399" stroke-width="2" stroke-opacity="0.6"/>
+</svg>

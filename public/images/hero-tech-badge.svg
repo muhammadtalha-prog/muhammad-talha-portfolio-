@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0070f3" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" fill="url(#heroBg)" rx="16" stroke="#0070f3" stroke-width="1.5"/>
+  <circle cx="300" cy="250" r="180" fill="none" stroke="#00e5ff" stroke-width="2" stroke-dasharray="10,6"/>
+  <circle cx="300" cy="250" r="130" fill="none" stroke="#0070f3" stroke-width="1.5"/>
+  <polygon points="300,160 380,310 220,310" fill="none" stroke="#f59e0b" stroke-width="3"/>
+  <circle cx="300" cy="160" r="12" fill="#00e5ff"/>
+  <circle cx="380" cy="310" r="12" fill="#0070f3"/>
+  <circle cx="220" cy="310" r="12" fill="#f59e0b"/>
+  <text x="300" y="245" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">AIR UNIVERSITY</text>
+  <text x="300" y="275" font-family="monospace" font-size="14" font-weight="bold" fill="#00e5ff" text-anchor="middle">IAA // NASTP ISLAMABAD</text>
+</svg>
