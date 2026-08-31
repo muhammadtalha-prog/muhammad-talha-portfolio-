@@ -24,9 +24,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2.9, duration: 0.8 }}
-          className="font-heading font-extrabold text-5xl sm:text-7xl md:text-8xl tracking-tight text-white glow-cyan"
+          className="font-signature text-4xl sm:text-6xl md:text-7xl bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-500 bg-clip-text text-transparent tracking-normal leading-snug drop-shadow-[0_4px_25px_rgba(255,215,0,0.45)] py-1"
         >
-          MUHAMMAD TALHA
+          Muhammad Talha
         </motion.h1>
 
         {/* Professional Subtitle */}
@@ -36,7 +36,7 @@ export default function HeroSection() {
           transition={{ delay: 3.1, duration: 0.8 }}
           className="font-hud text-xl sm:text-2xl md:text-3xl text-[#ffb700] tracking-widest uppercase"
         >
-          AI Research & ML Engineer
+          Computer Vision Engineer &amp; AI Researcher
         </motion.h2>
 
         {/* Summary Card */}

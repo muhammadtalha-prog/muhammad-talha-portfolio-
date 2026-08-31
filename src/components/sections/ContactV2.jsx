@@ -15,10 +15,15 @@ export default function ContactV2() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const cleanName = form.name.trim().slice(0, 100);
+    const cleanEmail = form.email.trim().slice(0, 150);
+    const cleanSubject = (form.subject || `Inquiry from ${cleanName}`).trim().slice(0, 200);
+    const cleanMessage = form.message.trim().slice(0, 2000);
+
     const mailtoUrl = `mailto:su72-bscsm-f22-068@superior.edu.pk?subject=${encodeURIComponent(
-      form.subject || `Inquiry from ${form.name}`
+      cleanSubject
     )}&body=${encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
+      `Name: ${cleanName}\nEmail: ${cleanEmail}\n\nMessage:\n${cleanMessage}`
     )}`;
     window.location.href = mailtoUrl;
     setSubmitted(true);

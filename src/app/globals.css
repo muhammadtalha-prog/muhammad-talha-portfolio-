@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@600;700&family=Sacramento&family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700;800&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -17,6 +17,7 @@
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
+  --font-signature: 'Allura', 'Sacramento', 'Caveat', cursive;
 }
 
 *, *::before, *::after {
@@ -38,12 +39,22 @@ body {
   line-height: 1.6;
 }
 
+@media (pointer: fine) {
+  body, button, a, [role="button"], input, select, textarea, .cursor-pointer {
+    cursor: none !important;
+  }
+}
+
 .font-heading {
   font-family: var(--font-heading);
 }
 
 .font-mono {
   font-family: var(--font-mono);
+}
+
+.font-signature {
+  font-family: var(--font-signature);
 }
 
 /* Light / Emerald / Light Blue Section Alternating Rhythm */

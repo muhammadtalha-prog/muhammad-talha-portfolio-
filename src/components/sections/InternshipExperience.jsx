@@ -307,7 +307,7 @@ export default function InternshipExperience() {
                   className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-950 tracking-tight leading-tight font-['Times_New_Roman',_Times,_serif]"
                   style={{ paddingBottom: "12px" }}
                 >
-                  Graphic Designer &amp; Digital Marketing Intern | Zameen Dost Group of Companies
+                  Graphic Designer &amp; Digital Marketing Intern | Zameen Dost
                 </h3>
 
                 {/* Single Bullet Point Strictly as Given */}
@@ -358,7 +358,7 @@ export default function InternshipExperience() {
                   >
                     <Image
                       src="/images/logos/zameendost-logo.png"
-                      alt="Zameen Dost Group of Companies Logo"
+                      alt="Zameen Dost Logo"
                       width={200}
                       height={200}
                       style={{ width: "200px", height: "200px" }}

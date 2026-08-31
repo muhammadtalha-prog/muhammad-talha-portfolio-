@@ -10,13 +10,13 @@ export default function SkillsSection() {
       title: "Programming Languages",
       icon: Code,
       variant: "cyan",
-      skills: ["Python", "C++", "Java", "Verilog (Draft)", "SQL"],
+      skills: ["Python", "C++", "Java", "Verilog (Draft)"],
     },
     {
-      title: "Data Analysis & ML",
+      title: "ML & Computer Vision",
       icon: Database,
       variant: "amber",
-      skills: ["YOLO11 / WaveYOLO", "LAB-Space CLAHE", "Exploratory Data Analysis", "Data Cleaning", "Google Sheets"],
+      skills: ["YOLO11 / WaveYOLO", "Computer Vision", "IRSTD", "Exploratory Data Analysis", "Google Sheets"],
     },
     {
       title: "Dev & AI Tools",
@@ -34,13 +34,13 @@ export default function SkillsSection() {
       title: "Design Software",
       icon: PenTool,
       variant: "cyan",
-      skills: ["Adobe Photoshop", "Adobe Illustrator", "Adobe Premiere Pro", "Figma"],
+      skills: ["Adobe Photoshop", "Adobe Illustrator", "Adobe Premiere Pro"],
     },
     {
       title: "Digital Marketing & Tools",
       icon: Megaphone,
       variant: "amber",
-      skills: ["Meta Business Suite", "TikTok Creative Center", "FB / IG Marketing", "TikTok Ads Manager"],
+      skills: ["Meta Business Suite", "TikTok Creative Center", "Instagram Marketing", "FB Ads Manager"],
     },
   ];
 

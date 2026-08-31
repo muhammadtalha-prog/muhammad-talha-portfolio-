@@ -194,7 +194,7 @@ export default function ResearchTechnicalProjects() {
 
               {/* Card 3 Main Title */}
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight font-['Times_New_Roman',_Times,_serif] text-center w-full">
-                Infrared Target Tracking &amp; FLIR Bounding Box Output Grid
+                Infrared Target Detection
               </h3>
             </motion.div>
 
@@ -210,7 +210,7 @@ export default function ResearchTechnicalProjects() {
               <div className="w-full max-w-5xl rounded-none overflow-hidden border border-slate-200 shadow-2xl bg-slate-950 p-2 relative flex items-center justify-center">
                 <Image 
                   src="/images/irstd-tracking-grid.png"
-                  alt="Infrared Target Tracking and FLIR Bounding Box Output Grid"
+                  alt="Infrared Target Detection"
                   width={1200}
                   height={675}
                   className="w-full h-auto max-h-[600px] object-contain mx-auto block transition-transform duration-500 hover:scale-[1.01]"

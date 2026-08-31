@@ -42,15 +42,15 @@ export default function HeroV2() {
         {/* Name & Title Sitting Directly ON TOP of the Banner Background with Motion */}
         <div className="relative z-20 max-w-5xl mx-auto px-6 text-center space-y-6 py-20">
           
-          {/* Main Name Title Motion */}
+          {/* Main Name Signature Title Motion */}
           <motion.div
             initial={{ opacity: 0, y: 40, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="space-y-2"
           >
-            <h1 className="font-heading font-extrabold text-5xl sm:text-7xl lg:text-8xl text-white tracking-tight leading-none text-center w-full drop-shadow-[0_12px_30px_rgba(0,0,0,0.9)]">
-              MUHAMMAD TALHA
+            <h1 className="font-signature text-4xl sm:text-6xl lg:text-7xl bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-500 bg-clip-text text-transparent tracking-normal leading-snug text-center w-full drop-shadow-[0_4px_25px_rgba(255,215,0,0.45)] drop-shadow-[0_10px_35px_rgba(0,0,0,0.95)] hover:scale-[1.01] transition-transform duration-300 py-1">
+              Muhammad Talha
             </h1>
           </motion.div>
 
@@ -62,8 +62,8 @@ export default function HeroV2() {
             className="flex items-center justify-center gap-3"
           >
             <Sparkles className="w-5 h-5 text-cyan-400 animate-pulse hidden sm:block" />
-            <h2 className="font-heading font-bold text-xl sm:text-3xl text-[#00e5ff] tracking-widest uppercase text-center drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
-              AI Research &amp; ML Engineer
+            <h2 className="font-heading font-bold text-lg sm:text-2xl md:text-3xl text-[#00e5ff] tracking-widest uppercase text-center drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
+              Computer Vision Engineer &amp; AI Researcher
             </h2>
             <Sparkles className="w-5 h-5 text-cyan-400 animate-pulse hidden sm:block" />
           </motion.div>

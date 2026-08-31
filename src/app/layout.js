@@ -1,5 +1,6 @@
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
+import CustomCursor from "@/components/ui/CustomCursor";
 
 export const metadata = {
   title: "MUHAMMAD TALHA — AI Agent Developer & Computer Vision Researcher",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#06090e" />
       </head>
       <body>
+        <CustomCursor />
         <div className="scanline-overlay" />
         <SmoothScroll>{children}</SmoothScroll>
       </body>

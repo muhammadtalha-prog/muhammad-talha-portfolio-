@@ -329,7 +329,7 @@ export default function NavbarV2() {
               </div>
 
               <div className="text-center text-xs font-mono text-slate-400 pt-1">
-                AI Research &amp; ML Engineer · Superior University &amp; Air University (IAA)
+                Computer Vision Engineer &amp; AI Researcher · Superior University &amp; Air University (IAA)
               </div>
             </motion.div>
           </motion.div>
